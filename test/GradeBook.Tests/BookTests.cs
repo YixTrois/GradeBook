@@ -12,7 +12,6 @@ namespace GradeBook.Tests
             var book = new Book("");
             book.AddGrade(89.1);
             book.AddGrade(19.1);
-            book.AddGrade(29.1);
 
             // act 
             var result = book.GetStatistics();
