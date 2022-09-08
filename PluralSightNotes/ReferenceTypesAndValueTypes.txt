@@ -1,0 +1,27 @@
+reference type:
+var b = new Book("Grades");
+Memory
+b: 1072(a value, represents a memory locatoin)
+1072: the address of where the book is in the memory
+doesn't contain the book
+
+value type:
+var x = 3;
+runtime still creates space instead of storing a reference inside of the variable, i store the value itself, so there is no pointer to an integer.
+
+convention for c#:
+public member has an uppercase
+
+the only difference between ref and out is that:
+
+whenever you are working with something defined by a class, then it's a reference type
+
+
+define struct: really small, a lot more efficient.
+public struct Point
+day to day business: 99% creating class instead of struct
+
+
+string is always a reference type in c#
+
+when we pass parameters, we always pass parameters by value in c#
