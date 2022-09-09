@@ -1,0 +1,46 @@
+different methods can have same name
+method signature: method name, parameter type
+downside of making a field public is that anyone can modify it.
+
+
+// read from or write to private backing field
+    public string Name
+    {
+        get
+        {
+            return name;
+        }
+        set
+        {
+            if(!String.IsNullOrEmpty(value))
+            {
+                name = value;
+            }
+        }
+    }
+// we make it private since we don't want it to be easily changed by anyone.
+private string Name;
+
+// property
+public string Name
+    {
+        get; set;
+    }
+
+readonly string category = "Science";
+a readonly field cannot be assigned to (except in a constructor or a variable initializer)
+
+const: more strict rules
+can't even change the value in a constructor 
+
+public const string CATEGORY = "Science";
+convention: all uppercase so that we can immediately recognize it is a const instead of a variable
+
+Events:
+Events not in style with server frameworks. 
+Events are hard to understand.
+Events are popular in forms and desktop programming.
+Events build on top of delegates.
+
+By using delegates, we can invoke multiple methods
+methods have to be the same type as the delegate.
