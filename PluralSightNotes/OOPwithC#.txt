@@ -4,5 +4,20 @@ access modifiers like public and private, give us explicit control over encapsul
 who sees the members of a class.
 Inheritance(overrated): reuse code across similar classes
 Polymorphism: allow us to have objects of the same type that can behave differently
-
+polymorph means an object or material which takes variosu forms, polymorphic behavior would be a behavior that can change.
+it's useful since we can write methods and code that is generic and doesn't have a dependdency on a specifc implementation
+i can work with books that store information over the network, work with all of that in just one method.
 any class would have a base class because .NET everything will derive from Object.
+
+abstract method: we want the bookbase class to have an AddGrade member, but at this level, i cannot provide an implementation
+let the derived types that inherit from this base class figuer out the implementation.
+
+override: you can only override abstract methods and methods that we call virtual methods which is the method that is marked with keyword virtual.
+
+interfaces are far more common than abstract classes.
+the beauty of interface that we want to have the interface to be able to express exactly what i require in particular bits of code.
+
+when implement an interface, we must have the members that interface has in the class even if they are abstract.
+
+virtual: here is a method in this class, but a derived class might choose to override the implementation details for this method.
+abstract: this method is implicitly virtual because someone needs to provide an implementation and override this abstract method.
