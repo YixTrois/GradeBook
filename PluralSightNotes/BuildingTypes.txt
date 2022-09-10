@@ -44,3 +44,5 @@ Events build on top of delegates.
 
 By using delegates, we can invoke multiple methods
 methods have to be the same type as the delegate.
+
+to think that button click is a event that we should tell the world about 

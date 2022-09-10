@@ -1,0 +1,8 @@
+Encapsulation(most important, key to good software design) : allow us to hide details about our code, 
+methods and properties allow us to encapsulate code, 
+access modifiers like public and private, give us explicit control over encapsulation and 
+who sees the members of a class.
+Inheritance(overrated): reuse code across similar classes
+Polymorphism: allow us to have objects of the same type that can behave differently
+
+any class would have a base class because .NET everything will derive from Object.
