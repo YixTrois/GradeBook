@@ -1,0 +1,4 @@
+C# generics
+Asynchrounous C#
+LINQ Fundamentals
+C# Programming Paradigms: last three modules.
