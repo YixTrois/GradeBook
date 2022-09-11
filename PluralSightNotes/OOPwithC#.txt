@@ -21,3 +21,18 @@ when implement an interface, we must have the members that interface has in the 
 
 virtual: here is a method in this class, but a derived class might choose to override the implementation details for this method.
 abstract: this method is implicitly virtual because someone needs to provide an implementation and override this abstract method.
+
+dispose method and close method typically do the same thing: clean up and free the underlying resource.
+
+using(StreamWriter writer = new StreamWriter(ConfigurationFilePath))
+{
+    writer.WriteLine(grade);    
+}
+c# compiler will essentially generate a try - finally statemnt, the c# compiler guarantees that it will call dispose on this IDisposable object.
+common patter in .NET programming: when working iwth an object that works with things like files or sockets and has underlying resource, we typically wrp those with a using statement
+so that we can create those objects and then dispose those objects as soon as we are finished working with them
+
+ecapsulation is the key to build a software
+by giving the statistic class the right level of encapsulation, we are able to offload a lot of work in the code that we can reuse.
+we can reuse the code withou having an inheritance relationship between any of the book classes and statistics
+all we did is to use the statistic class from other book classes.
